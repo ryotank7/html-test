@@ -4,9 +4,16 @@
  box-sizing: border-box;
  color: #6c6b6b;
 }
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
 main{
 	width: 960px;
-	margin: 50px 0;
+	margin: 50px auto;
+
 }
 .photo{
 	float: left;
@@ -22,7 +29,12 @@ main{
 	background-color: orange;
 	color: white;
 }
-
+.title{
+	color: black;
+}
+.text{
+	color: #222222;
+}
 .photo-list{
 	width: 300px;
 	padding: 10px;
