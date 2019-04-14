@@ -1,0 +1,52 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #6c6b6b;
+}
+main{
+	width: 960px;
+	margin: 50px 0;
+}
+.photo{
+	float: left;
+	width: 300px;
+	margin-right: 30px;
+	border:solid 1px silver;
+}
+.photo:last-child{
+	margin-right: 0;
+}
+.step{
+	position: absolute;
+	background-color: orange;
+	color: white;
+}
+
+.photo-list{
+	width: 300px;
+	padding: 10px;
+}
+.title, .text{
+	padding:0 10px
+}
+
+@media screen and (max-width:768px){
+	main{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.photo{
+		width: 90%;
+		float: none;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.photo:last-child{
+		margin-right: auto;
+	}
+	.photo-list{
+		width: 100%;
+	}
+
+}
